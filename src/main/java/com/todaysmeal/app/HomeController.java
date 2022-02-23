@@ -35,6 +35,7 @@ public class HomeController {
 		
 		return "home";
 		//이거 내가 올려본다.
+		//어이가 없네 뒤질라고ㅋㅋ
 	}
 	
 }

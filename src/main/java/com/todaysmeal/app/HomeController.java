@@ -35,6 +35,8 @@ public class HomeController {
 		
 		return "home";
 		//zzzzzzzzzzzzzzzzzzzzzzzz
+		//이번엔 포크된 내 레파지토리에서 만들어본당
+		//뭐지...이게 안들어가있는데...
 	}
 	
 }

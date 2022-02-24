@@ -13,10 +13,10 @@ import org.slf4j.LoggerFactory;
 import com.todaysmeal.app.HomeController;
 
 public class MySqlConnectionTest {
-	private final String DRIVER = "com.mysql.jdbc.Driver";
-	private final String URL = "jdbc:mysql://127.0.0.1:3306/tm";
-	private final String USER = "root";
-	private final String PWD = "mysqlwkd9595";
+	private final String DRIVER = "com.mysql.jdbc.Driver"; //mysql 드라이버 생성 주소?
+	private final String URL = "jdbc:mysql://127.0.0.1:3306/tm"; //mysql 주소
+	private final String USER = "root"; //mysql user id
+	private final String PWD = "mysqlwkd9595"; //mysql user pwd
 	
 	Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
@@ -34,8 +34,6 @@ public class MySqlConnectionTest {
 			logger.error("연결 실패");
 			flag = false;
 			assertTrue(flag);
-		}
-		
+		}	
 	}
-	
 }

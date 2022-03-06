@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
 import com.todaysmeal.app.HomeController;
 
 public class MySqlConnectionTest {
+	
 	private final String DRIVER = "com.mysql.jdbc.Driver"; //mysql 드라이버 생성 주소?
 	private final String URL = "jdbc:mysql://127.0.0.1:3306/tm"; //mysql 주소
 	private final String USER = "root"; //mysql user id

@@ -1,5 +1,5 @@
 package com.todaysmeal.app.board;
-
+//ss
 public class BoardService {
 
 }

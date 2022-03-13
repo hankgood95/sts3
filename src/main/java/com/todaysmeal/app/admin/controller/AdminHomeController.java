@@ -6,12 +6,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class AdminController {
+public class AdminHomeController {
 
-	Logger logger = LoggerFactory.getLogger(AdminController.class);
+	Logger logger = LoggerFactory.getLogger(AdminHomeController.class);
 	
 	@RequestMapping(value = "admin")
-	public String admin() {
+	public String adminHome() {
 		
 		logger.info("admin page에 들어왔다.");
 		

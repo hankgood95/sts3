@@ -10,15 +10,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
 </head>
 
 <body id="page-top">
 
+	<!-- jQuery 사용을 위한 include, 항상 최상단에 위치해 있어야 함 -->
+	<jsp:include page="common/jQuery.jsp"/>
+	
     <!-- Page Wrapper -->
     <div id="wrapper">
     	<!-- 사이드 네비바 파일을 가져와서 include 시켜줌, 사이드 네비바는 무조건 div id 가 wrapper안에 있어야 함 -->
     	<jsp:include page="common/side_nav.jsp"/>
+    	
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -362,13 +365,8 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
-                </div>
-            </footer>
+            <!-- Footer -->
+			<jsp:include page="common/footer.jsp"/>
             <!-- End of Footer -->
 
         </div>
@@ -380,13 +378,14 @@
     <!-- 맨위로 올라가게 해주는 토글 버튼과 우측 상단 로그아웃 부분 -->
     <jsp:include page="common/logout_scroll.jsp"/>
 
+	<!-- 차트를 사용하기 위한 script 시작-->
     <!-- Page level plugins -->
     <script src="${pageContext.servletContext.contextPath}/resources/admin/vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
     <script src="${pageContext.servletContext.contextPath}/resources/admin/js/demo/chart-area-demo.js"></script>
     <script src="${pageContext.servletContext.contextPath}/resources/js/demo/chart-pie-demo.js"></script>
-    
+    <!-- 차트를 사용하기 위한 script 끝-->
     
 
 </body>

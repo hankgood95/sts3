@@ -10,37 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Today's Meal</title>
     
-    <!-- jQuery 사용하기 위해서 시작-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- jQuery 사용하기 위해서 끝 -->
-    
-    <!-- DataTables를 사용하기 위해 사용하는 플러그인 시작 -->
-    <!-- Custom styles for this page -->
-    <link href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet">
-    <!-- Page level plugins -->
-    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-
-	<script>
-	$(document).ready( function () {
-	    $('#dataTable').DataTable();
-	} );
-	</script>
-<%-- 
-	<!-- Page level custom scripts -->
-    <script src="${pageContext.servletContext.contextPath}/resources/admin/js/dataTables/dataTablesSet.js"></script> --%>
-	
-	<!-- DataTables를 사용하기 위해 사용하는 플러그인 끝 -->
-	
 </head>
 
 <body id="page-top">
-
+	
+	<!-- jQuery 사용을 위한 include, 항상 최상단에 위치해 있어야 함 -->
+	<jsp:include page="common/jQuery.jsp"/>
     <!-- Page Wrapper -->
     <div id="wrapper">
-
+		
     	<!-- 사이드 네비바 파일을 가져와서 include 시켜줌, 사이드 네비바는 무조건 div id 가 wrapper안에 있어야 함 -->
     	<jsp:include page="common/side_nav.jsp"/>
 
@@ -68,7 +47,7 @@
                                         <tr>
                                             <th>날짜</th>
                                             <th>제목</th>
-                                            <th>작성장</th>
+                                            <th>작성자</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -90,13 +69,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
+			<jsp:include page="common/footer.jsp"/>
             <!-- End of Footer -->
 
         </div>
@@ -108,7 +81,17 @@
 	<!-- 맨위로 올라가게 해주는 토글 버튼과 우측 상단로그아웃 부분. 이건 항상 body의 제일 아래부분에 있도록 위치시키자 -->
 	<jsp:include page="common/logout_scroll.jsp"/>
     
-    
+
+    <!-- DataTables를 사용하기 위해 사용하는 플러그인 시작 -->
+    <!-- css cdn -->
+    <link href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet">
+    <!-- js cdn -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+	<!-- DataTable 설정에 관련된 js -->
+    <script src="${pageContext.servletContext.contextPath}/resources/admin/js/dataTables/dataTablesSet.js"></script>
+	
+	<!-- DataTables를 사용하기 위해 사용하는 플러그인 끝 -->
 
 </body>
 

@@ -4,13 +4,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-
-<!-- 오프라인에서 아이콘 사용할때 -->
-<%-- 	<link href="${pageContext.servletContext.contextPath}/resources/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> --%>
-<!-- 온라인에서 아이콘 사용할때 -->
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 
 </head>
 <body>

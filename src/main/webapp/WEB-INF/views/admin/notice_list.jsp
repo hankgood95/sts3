@@ -68,7 +68,7 @@
                                         <tr>
                                             <th>날짜</th>
                                             <th>제목</th>
-                                            <th>작서자</th>
+                                            <th>작성자</th>
                                         </tr>
                                     </thead>
                                     <tbody>

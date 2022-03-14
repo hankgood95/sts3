@@ -5,8 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Today's meal</title>
     <link rel="stylesheet" href="resources/front/css/index.css">
+    <title>Today's meal</title>
 </head>
 <body>
     <header id="header" class="hd_header">

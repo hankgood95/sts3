@@ -379,10 +379,6 @@
     
     <!-- 맨위로 올라가게 해주는 토글 버튼과 우측 상단 로그아웃 부분 -->
     <jsp:include page="common/logout_scroll.jsp"/>
-	
-	<!-- Custom scripts for all pages-->
-	<!-- 모든 페이지에 이게 들어가야지만 사이드 바에서 아래 토글버튼이 클릭되어짐 -->
-	<script src="${pageContext.servletContext.contextPath}/resources/admin/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
     <script src="${pageContext.servletContext.contextPath}/resources/admin/vendor/chart.js/Chart.min.js"></script>

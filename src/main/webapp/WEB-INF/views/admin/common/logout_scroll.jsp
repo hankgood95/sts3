@@ -43,6 +43,9 @@
 		</div>
 	</div>
 
+    <!-- Custom scripts for all pages-->
+	<!-- 이게 있어야지만 사이드 바에서 아래 토글버튼이 클릭되어지고  Responsive로 네비바가 클릭되어짐-->
+	<script src="${pageContext.servletContext.contextPath}/resources/admin/js/sb-admin-2.min.js"></script>
 
 </body>
 </html>

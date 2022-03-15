@@ -11,6 +11,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     
+    <!-- 해당 페이지에서 사용할 css파일 -->
+    <link href="${pageContext.servletContext.contextPath}/resources/admin/css/dataTables.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -40,22 +42,42 @@
                         <div class="card-header py-3">
                             <h4 class="m-0 font-weight-bold text-primary">공지사항</h4>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="height:80vh">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>날짜</th>
-                                            <th>제목</th>
-                                            <th>작성자</th>
+                                            <th id="date">날짜</th>
+                                            <th id="title-head">제목</th>
+                                            <th id="writer">작성자</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>2022/03/14</td>
-                                            <td>가즈아</td>
+                                            <td class="title">가즈아아아아앙아ㅏㅇ아아아아아아아아아아아앙아아아아아아아아아아아아아아아아아아아아아아앙아아아아아아아아아</td>
                                             <td>이욱재</td>
                                         </tr>
+                                        <tr>
+                                            <td>2022/03/14</td>
+                                            <td class="title">가즈아</td>
+                                            <td>함종석</td>
+                                        </tr>         
+                                        <tr>
+                                            <td>2022/03/14</td>
+                                            <td class="title">가즈아</td>
+                                            <td>김세환</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022/03/14</td>
+                                            <td class="title">가즈아</td>
+                                            <td>채준호</td>
+                                        </tr>   
+                                        <tr>
+                                            <td>2022/03/14</td>
+                                            <td class="title">가즈아</td>
+                                            <td>전증훈</td>
+                                        </tr>                                                                                                                                                                                          
                                     </tbody>
                                 </table>
                             </div>
@@ -84,13 +106,16 @@
 
     <!-- DataTables를 사용하기 위해 사용하는 플러그인 시작 -->
     <!-- css cdn -->
-    <link href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet">
+    
     <!-- js cdn -->
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js"></script>
+    
+    
 	<!-- DataTable 설정에 관련된 js -->
-    <script src="${pageContext.servletContext.contextPath}/resources/admin/js/dataTables/dataTablesSet.js"></script>
-	
+	<script src="${pageContext.servletContext.contextPath}/resources/admin/js/datatables/datatables_set.js"></script>
 	<!-- DataTables를 사용하기 위해 사용하는 플러그인 끝 -->
 
 </body>

@@ -5,7 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Today's meal</title>
+
+<!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <!-- 오프라인에서 아이콘 사용할때 -->
 <%-- 	<link href="${pageContext.servletContext.contextPath}/resources/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> --%>
 <!-- 온라인에서 아이콘 사용할때 -->

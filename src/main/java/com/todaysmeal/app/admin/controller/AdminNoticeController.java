@@ -15,7 +15,7 @@ public class AdminNoticeController {
 	public String adminNoticeList() {
 		
 		logger.info("admin Notice page에 들어왔다.");
-		//연습 가즈아아아
+		//연습 가즈아아아dd
 		return "admin/notice_list";
 	}
 }

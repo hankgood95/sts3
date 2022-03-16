@@ -13,7 +13,7 @@ public class AdminNoticeController {
 	
 	@RequestMapping(value = "adminNoticeList")
 	public String adminNoticeList() {
-		
+		//가즈
 		logger.info("admin Notice page에 들어왔다.");
 		return "admin/notice_list";
 	}

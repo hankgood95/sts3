@@ -16,6 +16,7 @@ public class AdminHomeController {
 		logger.info("admin page에 들어왔다.");
 		
 		return "admin/admin_home";
+		//WEB-INF/views/admin/admin_home.jsp 로 이동
 	}
 	
 }

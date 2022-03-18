@@ -49,7 +49,7 @@
 				data-parent="#accordionSidebar">
 				<div class="bg-white py-2 collapse-inner rounded">
 					<h6 class="collapse-header">신고 내용</h6>
-					<a class="collapse-item" href="buttons.html">댓글</a> <a
+					<a class="collapse-item" href="admincommentreport">댓글</a> <a
 						class="collapse-item" href="cards.html">게시판 글</a>
 				</div>
 			</div></li>

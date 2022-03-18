@@ -90,7 +90,7 @@
             </div>
             <!-- End of Main Content -->
 
-            <!-- Footer -->
+            <!-- Footer 부분 이건   content-wrapper 제일 아래에 위치시키도록 하자-->
 			<jsp:include page="common/footer.jsp"/>
             <!-- End of Footer -->
 

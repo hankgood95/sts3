@@ -17,9 +17,14 @@
 	<!-- Processes application requests -->
 	<servlet>
 		<servlet-name>appServlet</servlet-name>
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<!-- DispatcherServlet은 알맞는 Controller와 연결시켜주는것이다. -->
+		<!-- 여기서 Controller란 웹의 동적인 처리를 도와줄수 있게 하는 자바 클래스이다. -->
+		<!-- 그렇담 Controller 역할을 하는것은 알겠는데 해당 Controller들을 어디서 찾고 Controller에 대한 정보들은 어디서 찾냐? -->
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>-
 		<init-param>
+			<!-- 여기서 있는 contextConfigLocation는 Controller에 대한 Configuration(설정,구성)에 대한 정보가 들어가 있다. -->
 			<param-name>contextConfigLocation</param-name>
+			<!-- 해당 Configuration에 대한 정보의 디렉토리는 아래에 있다. -->
 			<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
@@ -28,8 +33,7 @@
 	<!-- servlet mapping으로 url 패턴을 등록시켰음 .do로 오는 url들은 모두 appServlet을 적용 -->
  	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
-		<url-pattern>/</url-pattern>
+		<url-pattern>/</url-pattern> <!-- 해당 URI에 맞으면 appServlet으로 연결시켜줌 -->
 	</servlet-mapping>
 	
-
 </web-app>

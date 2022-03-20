@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
@@ -14,17 +15,24 @@
     <!-- 해당 페이지에서 사용할 css파일 -->
     <link href="${pageContext.servletContext.contextPath}/resources/admin/css/dataTables.css" rel="stylesheet">
 </head>
-
 <body id="page-top">
 	
 	<!-- jQuery 사용을 위한 include, 항상 최상단에 위치해 있어야 함 -->
 	<jsp:include page="common/jQuery.jsp"/>
+	<!-- servletPath가 만약 true라면 아래 진입 -->
     <!-- Page Wrapper -->
     <div id="wrapper">
 		
     	<!-- 사이드 네비바 파일을 가져와서 include 시켜줌, 사이드 네비바는 무조건 div id 가 wrapper안에 있어야 함 -->
     	<jsp:include page="common/side_nav.jsp"/>
-
+    	<c:if test="${ pageName eq 'noticePage' }">
+    		<script>
+	            $(document).ready(function() {
+	            	$("#accordionSidebar").children(".nav-item").eq(0).removeClass("active");
+	                $("#accordionSidebar").children(".nav-item").eq(2).addClass("active");
+	            });
+    		</script>
+		</c:if>	 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -76,7 +84,11 @@
                                         <tr>
                                             <td>2022/03/14</td>
                                             <td class="title">가즈아</td>
-                                            <td>전증훈</td>
+                                            <td>
+											    <c:if test="${ pageName eq 'noticePage' }">
+											    	호호
+											    </c:if>	                                            	
+                                            </td>
                                         </tr>                                                                                                                                                                                          
                                     </tbody>
                                 </table>

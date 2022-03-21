@@ -5,7 +5,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
- 	<link rel="stylesheet" href="resources/front/css/index.css">
+ 	<link rel="stylesheet" href="resources/vote/css/index.css">
 	<title>투표 게시판</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
             <div class="header_sec">
               <h1 class="logo">
                 <a href="#">
-                  <img src="resources/front/img/index.png" alt="greating">
+                  <img src="resources/vote/img/index.png" alt="greating">
                 </a>
               </h1>
               <!-- 네비게이션 바 -->
@@ -48,7 +48,7 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
-      <img src="resources/front/img/test.jpg" class="card-img-top" alt="...">
+      <img src="resources/vote/img/test.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">짜장면 VS 짬뽕</h5>
         <p class="card-text">난 짬짜면 ㅋ</p>

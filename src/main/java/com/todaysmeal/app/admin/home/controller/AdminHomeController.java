@@ -1,4 +1,4 @@
-package com.todaysmeal.app.admin.controller;
+package com.todaysmeal.app.admin.home.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

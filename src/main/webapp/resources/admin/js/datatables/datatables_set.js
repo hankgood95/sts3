@@ -26,4 +26,11 @@ $(document).ready(function() {
 			}
 		}
 	});
+	
+	//제목이 길어지면 생기는 말줄임표를 읽을수 있게 해주는 jQuery
+	$(".title").each(function(){
+		if(this.offsetWidth < this.scrollWidth){ //구역의 크기보다 실제 컨텐츠의 크기가 크다면 진입
+			$(this).attr('title',$(this).text()); //툴팁 처럼 정보를 보여주는 부분 'title'이 툴팁의 역할을 할수 있게 해줌
+		}
+	});
 });

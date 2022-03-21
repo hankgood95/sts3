@@ -50,7 +50,7 @@
                         <div class="card-header py-3">
                             <h4 class="m-0 font-weight-bold text-primary">공지사항</h4>
                         </div>
-                        <div class="card-body" style="height:80vh">
+                        <div class="card-body" style="height:auto">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
@@ -63,7 +63,7 @@
                                     <tbody>
                                         <tr>
                                             <td>2022/03/14</td>
-                                            <td class="title">가즈아아아아앙아ㅏㅇ아아아아아아아아아아아앙아아아아아아아아아아아아아아아아아아아아아아앙아아아아아아아아아</td>
+                                            <td class="title">가즈아아아아앙아ㅏㅇ아아아아아아아아아아아앙아아아아아아아아아아아아아아아아아아아아아아앙아아아아아아아아아아아아아아아아아아아아아아아아아아아아아앙아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아</td>
                                             <td>이욱재</td>
                                         </tr>
                                         <tr>
@@ -84,12 +84,33 @@
                                         <tr>
                                             <td>2022/03/14</td>
                                             <td class="title">가즈아</td>
-                                            <td>
-											    <c:if test="${ pageName eq 'noticePage' }">
-											    	호호
-											    </c:if>	                                            	
-                                            </td>
-                                        </tr>                                                                                                                                                                                          
+                                            <td>전증훈</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022/03/14</td>
+                                            <td class="title">가즈아</td>
+                                            <td>이재명</td>
+                                        </tr>   
+                                        <tr>
+                                            <td>2022/03/14</td>
+                                            <td class="title">가즈아</td>
+                                            <td>윤석열</td>
+                                        </tr>   
+                                        <tr>
+                                            <td>2022/03/14</td>
+                                            <td class="title">가즈아</td>
+                                            <td>안철수</td>
+                                        </tr>   
+                                        <tr>
+                                            <td>2022/03/14</td>
+                                            <td class="title">가즈아</td>
+                                            <td>심상정</td>
+                                        </tr>   
+                                        <tr>
+                                            <td>2022/03/15</td>
+                                            <td class="title">가즈아</td>
+                                            <td>허경영</td>
+                                        </tr>                                                                                                                                                                                                                                                                                                                                                                                               
                                     </tbody>
                                 </table>
                             </div>

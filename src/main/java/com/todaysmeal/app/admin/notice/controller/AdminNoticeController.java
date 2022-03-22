@@ -44,6 +44,7 @@ public class AdminNoticeController {
 		//jsp 페이지에서 보여져야할 공지사항 List를 담아서 보낸다.
 		model.addAttribute("noticeList", noticeList);
 		
+		//자 그럼 이제 jsp에서 받아서 해볼까??
 		return "admin/notice_list";
 	}
 }

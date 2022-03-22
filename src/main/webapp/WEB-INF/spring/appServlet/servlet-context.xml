@@ -16,11 +16,17 @@
 	<resources mapping="/resources/**" location="/resources/" />
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+	<!-- 이부분이 jsp와 연결 시켜 줄수 있게 하는 부분인대 여기서 이제 return 값을 어떻게 처리할지 정의하는 부분이다. -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- Controller가 주는 return 값 앞에는 아래와 같이 /WEB-INF/views/를 붙이고 -->
 		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<!-- Controller가 주는 return 값 뒤에는 아래와 같이 .jsp 를 붙이게 한다. -->
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<!-- 일단 이 파일은  Controller에 대한 정보를 담는 파일인대 그럼 Controller가 어디 있는지를 찾아야 한다.-->
+	<!-- 그렇담 Controller를 찾아야 하는데 Controller는 아래에 있는 com.todaysmeal.app 하위 패키지에서 모든 파일들을 스캔해 Controller를 찾는다. -->
 	<context:component-scan base-package="com.todaysmeal.app"/>
+	<!-- 위 명령문 덕분에 이제 모든 Controller에 대한 정보가 담겨있다. 따라서 사용자의  요청에 맞는 uri에 맞는 controller를 찾아 처리를 할수 있게 된다.-->
 	
 </beans:beans>

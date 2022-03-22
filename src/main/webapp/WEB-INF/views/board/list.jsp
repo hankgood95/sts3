@@ -8,165 +8,165 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<style>
+
+.td {
+	vertical-align: middle;
+}
+
+.num {
+	width: 30px;
+}
+
+.name {
+	width: 30px;
+}
+
+.subject {
+	width: 120px;
+}
+
+.regdate {
+	width: 50px;
+}
+
+.hitcount {
+	width: 50px;
+}
+
+.thumb {
+ 	width: 10px;
+}
+
+.titlediv {
+	left: 50%;
+	top: 50%;
+	width: 50%;
+}
+
+.itemdiv {
+	left: 50%;
+	top: 50%;
+	width: 50%;
+	
+}
+
+.navbar {
+	justify-content: center;
+	width: 50%;
+}
 
 
-<style type="text/css">
-* { padding: 0; margin: 0; }
-*, ::after, ::before { box-sizing: border-box; }
-body {
- font-family:"Malgun Gothic", "맑은 고딕", NanumGothic, 나눔고딕, 돋움, sans-serif;
- font-size: 14px;
- color: #222;
+.paging {
+	float: left;
+	width: 50%;
+	text-align: center;
 }
-a { color: #222; text-decoration: none; cursor: pointer; }
-a:active, a:hover { color: #f28011; text-decoration: underline; }
-/* form-control */
-.btn {
- color: #333;
- border: 1px solid #999;
- background-color: #fff;
- padding: 5px 10px;
- border-radius: 4px;
- font-weight: 500;
- cursor:pointer;
- font-size: 14px;
- font-family: "맑은 고딕", 나눔고딕, 돋움, sans-serif;
- vertical-align: baseline;
+
+.paging-body {
+	display:inline-block;
+	position: absolute;
 }
-.btn:active, .btn:focus, .btn:hover {
- background-color: #f8f9fa;
- color:#333;
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #df4759;
+    border-color: #df4759;
 }
-.form-control {
- border: 1px solid #999; border-radius: 4px; background-color: #fff;
- padding: 5px 5px;
- font-family: "맑은 고딕", 나눔고딕, 돋움, sans-serif;
- vertical-align: baseline;
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #df4759;
+    background-color: #eee;
+    border-color: #df4759;
+}
+
+.pagination > .active > a
+{
+    color: #df4759;
+    background-color: #df4759 !Important;
+    border: solid 1px #df4759 !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #df4759 !Important;
+    border: solid 1px #df4759;
+}
 
 
-}
-.form-control[readonly] { background-color:#f8f9fa; }
-textarea.form-control { height: 170px; resize : none; }
-.form-select {
- border: 1px solid #999; border-radius: 4px; background-color: #fff;
- padding: 4px 5px;
- font-family: "맑은 고딕", 나눔고딕, 돋움, sans-serif;
- vertical-align: baseline;
-}
-.form-select[readonly] { background-color:#f8f9fa; }
-textarea:focus, input:focus { outline: none; }
-input[type=checkbox], input[type=radio] { vertical-align: middle; }
-/* table */
-.table { width: 100%; border-spacing: 0; border-collapse: collapse; }
-.table th, .table td { padding-top: 10px; padding-bottom: 10px; }
-.table-border thead > tr { border-top: 2px solid #212529; border-bottom: 1px solid #ced4da;
-}
-.table-border tbody > tr { border-bottom: 1px solid #ced4da; }
-.table-border tfoot > tr { border-bottom: 1px solid #ced4da; }
-/* board */
-.board { margin: 30px auto; width: 700px; }
-.title { width:100%; font-size: 16px; font-weight: bold; padding: 13px 0; }
-.table-form { margin-top: 20px; }
-.table-form td { padding: 7px 0; }
-.table-form tr:first-child { border-top: 2px solid #212529; }
-.table-form tr > td:first-child { width: 110px; text-align: center; background: #f8f9fa; }
-.table-form tr > td:nth-child(2) { padding-left: 10px; }
-.table-form input[type=text], .table-form input[type=file], .table-form textarea { width: 97%; }
-.table-form input[type=password] { width: 50%; }
+
 </style>
 
-
-<script type="text/javascript">
-function sendOk() {
-	
-	var f = document.boardForm; // 나중에 board form을 update, write로 할때 사용
-	var str = f.subject.value;
-	
-	if(!str) {
-	alert("제목을 입력하세요. ");
-	f.subject.focus();
-	return;
-	}
-	
- 	str = f.name.value;
- 	if(!str) {
- 	alert("이름을 입력하세요. ");
- 	f.name.focus();
- 	return;
- 	}
- 	
- 	str = f.content.value;
- 	if(!str) {
- 	alert("내용을 입력하세요. ");
- 	f.content.focus();
- 	return;
- 	}
- 	
- 	str = f.pwd.value;
- 	if(!str) {
- 	alert("패스워드를 입력하세요. ");
- 	f.pwd.focus();
- 	return;
- 	}
-
- f.action = "${pageContext.request.contextPath}/board/${mode}"; // 추후 update랑 write 구분
- f.submit();
-}
-
-</script>
-
-</head>
 <body>
-<div class="board">
-	<div class="title">
-		<h3><span>|</span> 게시판</h3>
-	</div>
-	
-	<form name="boardForm" method="post">
-		<table class="table table-border table-form">
-			<tr>
-				<td>제&nbsp;&nbsp;&nbsp;&nbsp;목</td>
-				<td>
-					<input type="text" name="subject" maxlength="100" class="form-control" value="${dto.subject}">
-				</td>
-			</tr>
-			<tr>
-				<td>작성자</td>
-				<td>
-					<input type="text" name="name" maxlength="10" class="form-control" value="${dto.name}">
-				</td>
-			</tr>
-			<tr>
-				<td>내&nbsp;&nbsp;&nbsp;&nbsp;용</td>
-				<td valign="top"> <textarea name="content" class="form-control">${dto.content}</textarea>
-				</td>
-			</tr>
-			<tr>
-				<td>패스워드</td>
-			<td>
-				<input type="password" name="pwd" maxlength="10" class="form-control"> (게시물 수정 및 삭제시 필요 !!!)
-			</td>
-			</tr>
-		</table>
 
-		<table class="table">
-			<tr>
-				<td align="center">
-					<button type="button" class="btn" onclick="sendOk();">${mode=='update'?' 수정완료':'등록하기'}</button>
-					<button type="reset" class="btn">다시입력</button>
-					<button type="button" class="btn" onclick="location.href='${pageContext.request.contextPath}/board/list';">${mode=='update'?'수정취소':'등록취소'}</button>
-					<c:if test="${mode=='update'}">
-						<input type="hidden" name="num" value="${dto.num}">
-						<input type="hidden" name="page" value="${page}">
-					</c:if>
-				</td>
-			</tr>
-		</table>
-	</form>
+
+<div class="titlediv">
+	<p style="text-align: left; font-size: 25px;"> 오늘의 식사</p>
+	<hr size="5" width="100%" align="center" style="color: red;">
+</div>
+		
+<div class="itemdiv">
+	<table class="table">
+		<tr>
+			<th class="num">번호</th>
+			<th class="thumb"> 썸네일 </th>
+			<th class="name">말머리</th>
+			<th class="subject">제목</th>
+			<th class="name">작성자</th>
+			<th class="regdate">작성일</th>
+			<th class="hitcount">조회수</th>
+		</tr>
+		<tr>
+			<td> 1 </td>
+			<td> <img class="img-thumbnail" alt="..." src="${pageContext.servletContext.contextPath}/resources/board/img/food1.jpg" width="100" height="100"> </td>
+			<td> 식사 </td>
+			<td> 오늘의 식사 짜장면 </td>
+			<td> 채준호 </td>
+			<td> 2021-09-50 </td>
+			<td> 7 </td>
+		</tr>
+		<tr>
+			<td> 2 </td>
+			<td> <img class="img-thumbnail" alt="..." src="${pageContext.servletContext.contextPath}/resources/board/img/food2.jpg" width="100" height="100"> </td>
+			<td> 식사 </td>
+			<td> 오늘의 괴식 김가루 말아먹는 콘프레이크 시리얼 </td>
+			<td> 전증훈 </td>
+			<td> 2021-05-20 </td>
+			<td> 26 </td>
+		</tr>			
+
+	</table>
 </div>
 
-
-
+<div class="paging">
+	<div class="paging-body">
+		<nav aria-label="Page navigation example" style="position: absolute; left: 50%;">
+			<ul class="pagination" style="width: 900px;">
+			    <li class="page-item"><a class="page-link" href="#">이전</a></li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#">다음</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div style="width: 50%; position: absolute;">
+	<div style="text-align: left; position: absolute; left: 00%;">
+		<button type="button" class="btn btn-outline-danger">새로고침 </button>
+	</div>
+	<div style="text-align: right; position: absolute; right: 0%;">
+		<button type="button" class="btn btn-outline-danger" onclick="location.href='${pageContext.request.contextPath}/board/write';">글쓰기</button>
+	</div>
+	</div>
+</div>
+	
 
 </body>
 </html>

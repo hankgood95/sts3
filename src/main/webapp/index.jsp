@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resources/front/css/index.css">
+    <link rel="stylesheet" href="resources/main/css/index.css">
     <title>Today's meal</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
             <div class="header_sec">
               <h1 class="logo">
                 <a href="#">
-                  <img src="resources/front/img/index.png" alt="greating">
+                  <img src="resources/main/img/index.png" alt="greating">
                 </a>
               </h1>
               <!-- 네비게이션 바 -->

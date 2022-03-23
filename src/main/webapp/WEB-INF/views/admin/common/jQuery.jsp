@@ -25,6 +25,8 @@
 	href="${pageContext.servletContext.contextPath}/resources/admin/css/sb-admin-2.min.css"
 	rel="stylesheet">
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet">
+
 </head>
 <body>
 	<script

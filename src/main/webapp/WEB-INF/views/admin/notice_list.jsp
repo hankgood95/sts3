@@ -36,7 +36,8 @@
 	                })
 	            });
     		</script>
-		</c:if>	 
+		</c:if>
+		<c:set var="uri" value="${pageContext.request.requestURI}"/>
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -85,7 +86,7 @@
                                         <tr>
                                             <td>2022/03/14</td>
                                             <td class="title">가즈아</td>
-                                            <td>채준호</td>
+                                            <td>${ uri }</td>
                                         </tr>   
                                         <tr>
                                             <td>2022/03/14</td>

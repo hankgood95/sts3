@@ -47,4 +47,13 @@ public class AdminNoticeController {
 		//자 그럼 이제 jsp에서 받아서 해볼까??
 		return "admin/notice_list";
 	}
+	
+	@RequestMapping(value="newnotice")
+	public String newNotice(Model model) {
+		
+		//해당 페이지가 noticePage라는것을 알려주기 위해서 model에 pageName을 보낸다.
+		model.addAttribute("pageName", "noticePage");
+		
+		return "admin/new_notice";
+	}
 }

@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+<<<<<<< HEAD
 	<wb-module deploy-name="todaysmeal">
+=======
+    	
+    <wb-module deploy-name="app-1.0.0-BUILD-SNAPSHOT">
+                
+>>>>>>> branch 'master' of https://github.com/hankgood95/sts3.git
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+<<<<<<< HEAD
 		<wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
 		<property name="java-output-path" value="target/classes"/>
+=======
+        		
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        		
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        		
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
+        		
+        <property name="java-output-path" value="target/classes"/>
+>>>>>>> branch 'master' of https://github.com/hankgood95/sts3.git
         <property name="context-root" value="app"/>
-	</wb-module>
+        	
+    </wb-module>
+    
 </project-modules>
